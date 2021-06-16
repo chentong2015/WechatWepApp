@@ -1,0 +1,40 @@
+.safe-status{
+	float: right;
+	margin-right: 20px;
+	font-size: 14px;
+	color: greenyellow;
+	height: 20px;
+}
+
+.safe-status *{
+	vertical-align: middle;
+}
+
+.safe-status img{
+	height: 100%;
+	margin-right: 5px;
+}
+
+.mui-popover.mui-popover-action .mui-table-view {
+	margin: 0px;
+    text-align: center;
+    color: #00ffac;
+    border-radius: 0px;
+}
+
+.loginout-tip{
+	font-size: 12px;
+	color: gray;
+}
+
+#loginout{
+	color: red;
+}
+
+.cancel-box{
+	margin-top: 8px!important;
+}
+
+#sheet{
+	background-color: #e8e8ee;
+}

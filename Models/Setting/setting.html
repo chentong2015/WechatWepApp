@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../Sources/mui.css" rel="stylesheet" />
+		<script src="../../Sources/mui.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../Sources/app.css"/>
+		<link rel="stylesheet" type="text/css" href="setting.css"/>		
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back  mui-pull-left"><i class="mui-icon mui-icon-left-nav"></i>MY HOME</a>
+		    <h1 class="mui-title">SETTING</h1>
+		</header>
+		
+		<div class="mui-content">
+		    <ul class="mui-table-view">
+	            <li class="mui-table-view-cell">
+	                <a class="mui-navigate-right">
+	                    <span> Information Security	</span>
+	                    <div class="safe-status">
+	                    	<img src="safe.png"/>
+	                    	<span>OK</span>
+	                    </div>
+	                </a>
+	            </li>
+	        </ul>
+	        <br />
+	        <ul class="mui-table-view">
+	            <li class="mui-table-view-cell">
+	                <a class="mui-navigate-right">
+	                    New Information
+	                </a>
+	            </li>
+	            <li class="mui-table-view-cell">
+	                <a class="mui-navigate-right">
+	                    Your Secret
+	                </a>
+	            </li>
+	            <li class="mui-table-view-cell">
+	                <a class="mui-navigate-right">
+	                    General Information
+	                </a>
+	            </li>
+	        </ul>
+	        <br />
+	        <ul class="mui-table-view">
+	            <li class="mui-table-view-cell">
+	                <a class="mui-navigate-right">
+	                    Get help
+	                </a>
+	            </li>
+	            <li class="mui-table-view-cell">
+	                <a class="mui-navigate-right">
+	                    About WeChat
+	                </a>
+	            </li>
+	        </ul>
+	        <br />
+	        <ul class="mui-table-view">
+	            <li class="mui-table-view-cell mui-text-center">
+	                <a href="#sheet">Login Out</a>
+	            </li>
+	        </ul>        
+	         
+	        <div id="sheet" class="mui-popover mui-popover-bottom mui-popover-action ">
+	            <!-- 可选择菜单 -->
+	            <ul class="mui-table-view">
+	              <li class="mui-table-view-cell loginout-tip">
+	                Save your informations Safty ! Welcome back again !
+	              </li>
+	              <li class="mui-table-view-cell">
+	                <a href="#" id="loginout">Login out</a>
+	              </li>
+	            </ul>
+	            <!-- 取消菜单 -->
+	            <ul class="mui-table-view cancel-box">
+	              <li class="mui-table-view-cell">
+	                <a href="#sheet1" id="cancel">Cancel</a>
+	              </li>
+	            </ul>
+	        </div>
+	          
+		</div>
+
+   		<script src="setting.js"></script>
+   		
+	</body>
+
+</html>

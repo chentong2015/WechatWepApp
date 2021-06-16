@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Camera Example</title>
+	
+	<script type="text/javascript">
+		// 扩展API加载完毕后调用onPlusReady回调函数 
+		document.addEventListener( "plusready", onPlusReady, false );
+		// 扩展API加载完毕，现在可以正常调用扩展API 
+		function onPlusReady() {
+			console.log("plusready");
+		}
+		// 拍照
+		function captureImage(){
+			var cmr = plus.camera.getCamera();
+			var res = cmr.supportedImageResolutions[0];
+			var fmt = cmr.supportedImageFormats[0];
+			console.log("Resolution: "+res+", Format: "+fmt);
+			cmr.captureImage( function( path ){
+					alert( "Capture image success: " + path );  
+				},
+				function( error ) {
+					alert( "Capture image failed: " + error.message );
+				},
+				{resolution:res,format:fmt}
+			);
+		}
+	</script>
+	
+	</head>
+	<body>
+		<button onclick="captureImage()">Take a photo</button>
+		
+		<video width="400" controls>
+		  <source src="video.mp4" type="video/mp4">
+		  Your browser does not support HTML5 video.
+		</video>
+		
+		<!--
+        	<video width="800" height="">
+			<source src="video.mp4" type="video/mp4"></source>
+			<source src="myvideo.ogv" type="video/ogg"></source>
+			<source src="myvideo.webm" type="video/webm"></source>
+			<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+				<param name="movie" value="myvideo.swf" />
+				<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+			</object>
+			当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+		</video>
+        -->
+		
+	</body>
+</html>

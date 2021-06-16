@@ -1,0 +1,25 @@
+.mui-bar-tab{
+	height: 95px;
+	background-color: #323232;
+}
+
+/*.mui-bar-tab .mui-tab-item.mui-active{
+	color:#0CF53E ;
+}*/
+
+#bcode{
+	position: absolute;
+	bottom: 95px;
+	top: 44px;
+	width: 100%;
+	background-color: #4d4d4d;
+}
+
+.button-camera{
+	background: #323232;
+	color: gainsboro;
+	font-size: 20px;
+	padding: 5px;
+	margin-top:40px;
+	/*border: 0px solid black;*/
+}

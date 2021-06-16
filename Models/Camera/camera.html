@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />	
+		<link rel="stylesheet" type="text/css" href="../../Sources/mui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../Sources/app.css"/>
+		<script src="../../Sources/mui.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="camera.css"/>
+		<title></title>
+		
+		<script type="text/javascript">
+			// 扩展API加载完毕后调用onPlusReady回调函数 
+			document.addEventListener( "plusready", onPlusReady, false );
+			// 扩展API加载完毕，现在可以正常调用扩展API 
+			function onPlusReady() {
+				console.log("plusready");
+			}
+			function captureImage(){
+				var cmr = plus.camera.getCamera();
+				var res = cmr.supportedImageResolutions[0];
+				var fmt = cmr.supportedImageFormats[0];
+				console.log("Resolution: "+res+", Format: "+fmt);
+				cmr.captureImage( function( path ){
+						alert( "Capture image success: " + path );  
+					},
+					function( error ) {
+						alert( "Capture image failed: " + error.message );
+					},
+					{resolution:res,format:fmt}
+				);
+			}
+		</script>
+		
+	</head>
+    <body>
+    	
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-pull-left"><i class="mui-icon mui-icon-left-nav"></i>BACK</a>
+		    <h1 class="mui-title">Take a Picture</h1>
+		    <a class="mui-pull-right"><i class="mui-icon mui-icon-settings"></i></a>
+		</header>
+		
+		<div class="mui-content">
+		    <div id="bcode"> </div>
+		    <center>
+		    	<button class="button-camera" onclick="captureImage()"> Click here to take a picture </button> 
+		    </center>	    
+		</div>
+		
+		<nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-camera"></span>
+		        <span class="mui-tab-label">Scan</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-chatboxes-filled"></span>
+		        <span class="mui-tab-label">Cover</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-videocam"></span>
+		        <span class="mui-tab-label">Camera</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-gear"></span>
+		        <span class="mui-tab-label">Setting</span>
+		    </a>
+		</nav>
+			
+		<script src="camera.js"></script>
+	
+    </body>
+</html>

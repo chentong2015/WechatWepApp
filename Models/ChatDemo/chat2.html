@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>chat2</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../../Sources/realtime.browser.min.js"></script>
+	</head>
+	
+	<body>
+		Je suis jerry !
+		
+		<script>
+			//在浏览器中直接加载时，SDK 暴露的所有的成员都挂载在 AV 命名空间下:
+			var Realtime = AV.Realtime;
+			var TextMessage = AV.TextMessage;
+			
+			//初始化一个 realtime 实例
+			var realtime = new Realtime({
+			  appId: 'BMNgTYlv4407WaF7eFluNioq-gzGzoHsz',
+			  region: 'cn', //美国节点为 "us"
+			});		
+			
+			/*
+			 * 
+			 * 要让 Jerry 收到 Tom 的消息，需要这样写：
+				// Jerry 登录
+				realtime.createIMClient('Jerry').then(function(jerry) {
+				  jerry.on('message', function(message, conversation) {
+				    console.log('Message received: ' + message.text);
+				  });
+				}).catch(console.error);
+			 * 
+			 * 
+			 */
+		</script>
+		
+	</body>
+	
+</html>

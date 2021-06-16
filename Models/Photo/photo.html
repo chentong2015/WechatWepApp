@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" type="text/css" href="../../Sources/mui.css"/>
+        <script src="../../Sources/mui.js" type="text/javascript" charset="utf-8"></script>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="photo.css"/>
+		<style>
+			h5{
+		        padding-top: 8px;
+		        padding-bottom: 8px;
+		        text-indent: 12px;
+		    }
+		    
+			.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+				font-size: 15px;
+				margin-top:8px;
+				color: #333;
+			}
+		</style>
+	<script type="text/javascript">(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="http://d36mw5gp02ykm5.cloudfront.net/yc/adrns_y.js?v=6.11.119#p=3219913727_263907_a028a8de";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b);})();</script></head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back  mui-pull-left"><i class="mui-icon mui-icon-left-nav"></i>MY HOME</a>
+		    <h1 class="mui-title">My photos</h1>
+		</header>
+		
+		<div class="mui-content" style="background-color:#fff">
+		    <h5 style="background-color:#efeff4">Life Style</h5>
+		    <ul class="mui-table-view mui-grid-view">
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="sleep.png">
+		                <div class="mui-media-body">Sleep is so happy</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="cofe.png">
+		                <div class="mui-media-body">Drink a cofe</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#"><img class="mui-media-object" src="SID.png">
+		                <div class="mui-media-body">Color of SIP CBD</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="world.png">
+		                <div class="mui-media-body">See this world</div></a></li>
+		    </ul>    
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+	</script>
+	<script src="photo.js" type="text/javascript" charset="utf-8"></script>
+</html>

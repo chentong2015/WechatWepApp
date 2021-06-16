@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../Sources/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../Sources/app.css"/>
+		<link rel="stylesheet" type="text/css" href="chat.css"/>
+		<script src="../../Sources/realtime.browser.min.js"></script>	
+		
+		<script type="text/javascript">
+		    // 监听plusready事件  
+			document.addEventListener( "plusready", function(){
+				// 扩展API加载完毕，现在可以正常调用扩展API
+			}, false );
+			var text=null;
+
+			function startRecognize(){		
+				var options = {};
+				options.engine = 'iFly';
+				text = "I speak this :";
+				alert( "Start voice identify：  please speak something...." );
+				plus.speech.startRecognize( options, function ( s ) {
+					text += s;
+				}, function ( e ) {
+					alert( "Voice identify failed："+e.message );
+				} );
+				setTimeout( function(){
+					plus.speech.stopRecognize();
+				},10000);	
+				
+				if(text==null ){
+					alert("Can't identify your voice !");
+				}else{
+					var VoiceSend='<div class="chat-box chat-box-right mui-content-padded">'+
+			    	'	<img class="chat-person" src="stars.png"/>'+
+			    	'	<div class="chat-content">'+
+			    	'		<div class="chat-content-text">'+
+			    				text+				    		
+			    	'		</div>'+
+			    	'		<div class="chat-content-arrow"> </div>'+
+			    	'	</div>'+
+			    	'	<div class="clear-float"> </div>'+
+			    	'</div>';		    	
+					//******使用js的DOM方式创建一个页面元素Element *********
+					var NewDOM=document.createElement('div');
+					//添加到DOM中后使用添加子节点的方式追加appendChild到页面的列表中
+					NewDOM.innerHTML=VoiceSend;			    	
+					//querySelector获取对话列表的页面
+					var MessageList=document.querySelector('.chatlist');
+					MessageList.appendChild(NewDOM);	
+				}	
+			}	 
+			
+			
+			
+	   </script>		
+		
+	</head>
+	<body>
+		
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-pull-left"><i class="mui-icon mui-icon-left-nav"></i>Message</a>
+		    <h1 class="mui-title">CHEN Tong</h1>
+		    <a class="mui-pull-right"><i class="mui-icon mui-icon-person-filled"></i></a>
+		</header>
+		
+		<div class="mui-content">
+		    <div class="chatlist">
+		    	
+		    	<div class="chat-box-time">
+		    		<span class="chat-time"> 19:00 </span>
+		    	</div>  
+		    	
+		    	
+		    	<!--<div class="chat-box chat-box-left mui-content-padded">
+		    		<img class="chat-person" src="stars.png"/>
+		    		<div class="chat-content">
+		    			<div class="chat-content-text">
+		    				Je suis chen tong !	    					    			
+		    			</div>	
+		    			<div class="chat-content-arrow"> </div>
+		    		</div>
+		    		<div class="clear-float"> </div>
+		    	</div>  
+		    	
+		    	<div class="chat-box chat-box-right mui-content-padded">
+		    		<img class="chat-person" src="star.png"/>
+		    		<div class="chat-content">
+		    			<div class="chat-content-text">
+		    				Je suis victor !			    		
+		    			</div>	
+		    			<div class="chat-content-arrow"> </div>
+		    		</div>
+		    		<div class="clear-float"> </div>
+		    	</div>  		    		    			 -->
+		    	
+		    </div>
+		</div>		
+
+		<footer>
+			<div class="footer-left">
+				<button id="voice-send" type="button" class="mui-icon mui-icon-mic-filled" onclick="startRecognize()"></button>
+				<!--  <i class="mui-icon mui-icon-mic-filled"></i>  -->
+			</div>
+			<div class="footer-center">
+				<textarea id="MessageInput" class="inpit-text">  </textarea>
+			</div>
+			<div class="footer-right">		
+				<i id='emotions' class="mui-icon mui-icon-eye"></i>
+				<!--<i id='more' class="mui-icon mui-icon-plusempty"></i> --> 
+				<button id="more" type="button" class="mui-icon mui-icon-plusempty"></button>
+				<button id="button-send" type="button" class="mui-btn mui-btn-blue mui-btn-block">Send</button>			
+			</div>			
+		</footer>			
+		
+		<script src="../../Sources/mui.js"></script>
+		<script src="chatvictor.js"></script>
+		
+	</body>
+</html>

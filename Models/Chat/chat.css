@@ -1,0 +1,235 @@
+html,body,.mui-content{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	-webkit-user-select: none;
+	background-color: #ccffe6;
+}
+
+.chatlist{
+	height: 100%;
+	overflow: auto;
+	-webkit-user-select: none;
+	padding-bottom: 45px;
+}
+
+/* 聊天的时间  */
+.chat-box-time{
+	text-align: center;
+	margin: 12px 0;
+}
+.chat-time{
+	font-size: 15px;
+	background-color: #ff9999;
+	border-radius: 3px;
+	padding: 2px 4px;
+}
+
+
+.chat-box{
+	max-width: 80%;
+}
+
+.chat-person{	
+	width: 40px;
+	height: 40px;
+}
+
+.chat-content{
+	margin-top: 5px;		
+	padding: 5px;
+	border: 1px solid #80b3ff;
+	border-radius: 10px;
+	/* 注意对话框的宽度不必定死 */
+	max-width: 70%;
+	min-width: 55px;
+	min-height: 32px;
+	/* 该处设置成相对的定位 用于小箭头的绝对定位寻找 */
+	position: relative;
+}
+
+/* 左右边的对话板块的浮动清除 !!!!!!!!!!!!!!!!! */
+/* 意义在于 让本该有的换行绝对执行  */
+.chat-box{
+	clear: both;
+} 
+
+/* 左边的对话板块 */
+.chat-box .chat-box-left{
+	float: left;
+}
+/* 右边的对话板块 */
+.chat-box.chat-box-right{
+	float: right;
+}
+
+/* 控制内容的文字换行 
+.chat-content .chat-content-text{
+	word-wrap: break-word;
+}
+*/
+
+
+/*  清除图片和对话的浮动影响 !!!!!!!!!!!!!!!! */
+.clear-float{
+	clear: both;
+}
+
+/* 左边的小箭头 */ 
+.chat-box-left .chat-content-arrow{
+	width: 18px;
+	height: 18px;
+	background-color: #4dff4d;
+	border: 1px solid #80b3ff;
+	/* 取消部分的边界的效果  */
+	border-top: none;
+	border-right: none;
+	/* 往Z轴旋转45度, 并且让HBuildre内置的浏览器兼容该属性 */
+	transform: rotateZ(45deg);
+	-webkit-transform: rotateZ(45deg);
+	/* 绝对定位小箭头到父级的chat-content定位之下  */
+	position: absolute;
+	left: -8px;
+	top: 7px;
+}
+
+/* 左边图片和对话的浮动  */
+.chat-box-left .chat-person{
+	float: left;
+}
+.chat-box-left .chat-content{
+	float: left;
+	margin-left: 15px;
+	background-color: #4dff4d;
+}
+/* 控制内容的文字 */
+.chat-box-left .chat-content .chat-content-text{
+	margin-left: 8px;
+}
+
+/* 右边的小箭头 */
+.chat-box-right .chat-content-arrow{
+	width: 18px;
+	height: 18px;
+	background-color: #ffff33;
+	border: 1px solid #80b3ff;
+	/* 取消部分的边界的效果  */
+	border-bottom: none;
+	border-left: none;
+	/* 往Z轴旋转45度, 并且让HBuildre内置的浏览器兼容该属性 */
+	transform: rotateZ(45deg);
+	-webkit-transform: rotateZ(45deg);
+	/* 绝对定位小箭头到父级的chat-content定位之下  */
+	position: absolute;
+	right: -8px;
+	top: 7px;
+}
+
+/* 右边图片和对话的浮动  */
+.chat-box-right .chat-person{
+	float: right;
+}
+.chat-box-right .chat-content{
+	float: right;
+	margin-right: 15px;
+	background-color: #ffff33;
+}
+/* 控制内容的文字 */
+.chat-box-right .chat-content .chat-content-text{
+	margin-right: 8px;
+}
+
+
+/* 绝对定位 : 固定底部的标签 */
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	min-height: 45px;
+	/* background-color: #ccccff; */
+	border-top: 1px solid gray;
+	border-radius: 5px;
+	/* 用footer的内部padding值来取消footer-center这部份的边距  */
+	/*  padding 值的控制为顺时针  */
+	padding: 0 100px 0 50px;
+}
+
+/* 发送语音的按钮  */
+#voice-send{
+	background-color: #ccffe6;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding-right: 28px;
+    padding-left: 8px;
+}
+
+/* 在绝对定位流的三个标签 div 都会浮动到指定位置  */
+.footer-left{
+	/* background-color: green; */
+	height: 100%;
+	width: 50px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 5px 6px;
+}
+.footer-left i{
+	font-size: 28px;
+	border: 1px solid #b3b3b3;
+	padding: 2px;
+	border-radius: 8px;
+}
+
+/* 这里中间的浮动其实占整个的地步footer */ 
+.footer-center{
+	/* background-color: red; */
+	height: 100%;
+}
+
+/* textarea : 中间文本框的输入获取 */
+.inpit-text{
+	width: 100%;
+	height: 100px;
+	border-radius: 5px;
+    overflow: auto;
+}
+
+.footer-right{
+	/*  background-color: blue;  */
+	height: 100%;
+	width: 100px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 5px 10px;
+}
+
+.footer-right i{
+	font-size: 30px;
+	border: 1px solid #b3b3b3;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+.footer-right button{
+	background-color: #ccffe6;
+	font-size: 30px;
+	border: 1px solid #b3b3b3;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+#button-send{
+	height: 96%;
+	width: 95%;
+	/*padding-bottom: 5px;*/
+	margin-bottom: 5px;
+	color: blue;
+	font-size: 22px;
+	/*  控制显示使用display  */
+	display: none;
+}

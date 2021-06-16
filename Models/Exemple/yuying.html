@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Speech Example</title>
+	<script type="text/javascript">
+		// 监听plusready事件  
+		document.addEventListener( "plusready", function(){
+			// 扩展API加载完毕，现在可以正常调用扩展API
+		}, false );
+		var text=null;
+		function startRecognize () {
+			var options = {};
+			options.engine = 'iFly';
+			text = "";
+			alert( "开始语音识别：" );
+			plus.speech.startRecognize( options, function ( s ) {
+				text += s;
+			}, function ( e ) {
+				alert( "语音识别失败："+e.message );
+			} );
+			setTimeout( stopRecognize, 10000 );
+		}
+		function stopRecognize(){
+			plus.speech.stopRecognize();
+		}
+	</script>
+	</head>
+	<body>
+		<button onclick="startRecognize">开始识别(10s)</button><br/>
+		<button onclick="alert(text);">识别内容</button>
+	</body>
+</html>
+
+	

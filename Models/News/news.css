@@ -1,0 +1,102 @@
+/*
+ *这是单独为hello mui准备的个性化css，可以覆盖标准mui的css定义；
+ * 在实际项目开发时，建议为App单独写一个css文件，从而实现项目的自定义皮肤功能；
+ * 
+ * */
+.mui-plus.mui-android header.mui-bar{
+	display: none;
+}
+.mui-plus.mui-android .mui-bar-nav~.mui-content{
+	padding: 0;
+}
+
+/*hm开头的表示仅为 Hello MUI示例定义*/
+.hm-description{
+	margin: .5em 0;
+}
+
+.hm-description>li {
+	font-size: 14px;
+	color: #8f8f94;
+}
+
+.mui-content{
+	height: 100%;
+	margin-bottom: 45px;
+	padding: 0;
+	overflow: hidden;
+	-webkit-user-select: none;
+}
+
+/* 绝对定位 : 固定底部的标签 */
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	min-height: 45px;
+	background-color: #ccffe6;
+	border-top: 1px solid gray;
+	border-radius: 5px;
+	/* 用footer的内部padding值来取消footer-center这部份的边距  */
+	/*  padding 值的控制为顺时针  */
+	padding: 0 100px 0 50px;
+}
+
+/* 在绝对定位流的三个标签 div 都会浮动到指定位置  */
+.footer-left{
+	height: 100%;
+	width: 50px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	/*padding: 5px 6px;*/
+	padding-top: 8px;
+	padding-left: 12px;
+}
+
+
+.footer-left i{
+	border: 1px solid #b3b3b3;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+/* 这里中间的浮动其实占整个的地步footer */ 
+.footer-center{
+	height: 100%;
+}
+
+/* textarea : 中间文本框的输入获取 */
+.input-text{
+	width: 100%;
+	height: 100px;
+	border-radius: 5px;
+    overflow: auto;
+}
+
+.footer-right{
+	height: 100%;
+	width: 100px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 4px 8px;
+}
+
+.footer-right button{
+	background-color: #ccffe6;
+	font-size: 30px;
+	border: 1px solid #b3b3b3;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+#button-send{
+	height: 96%;
+	width: 95%;
+	margin-bottom: 5px;
+	color: green;
+	font-size: 22px;
+}

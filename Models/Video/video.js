@@ -1,0 +1,3 @@
+//init mui
+
+mui.init();

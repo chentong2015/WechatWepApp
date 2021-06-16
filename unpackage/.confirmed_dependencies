@@ -1,0 +1,326 @@
+{
+  "Models/Login/login.html": {
+    "resources": [
+      "Models/Login/login.js",
+      "Models/Login/login.css",
+      "Sources/mui.js",
+      "Sources/fonts/mui.ttf",
+      "Sources/mui.css",
+      "Models/Problem/problem.html",
+      "img/renren.png",
+      "img/sina.png",
+      "img/gmail.png",
+      "img/facebook.png",
+      "img/zhifubao.png",
+      "img/qq.png",
+      "img/github.png",
+      "img/twitter.png",
+      "img/wechat.png",
+      "Models/img/zhifubao.png",
+      "Models/img/qq.png",
+      "Models/img/renren.png",
+      "Models/img/gmail.png",
+      "Models/img/sina.png",
+      "Models/img/facebook.png",
+      "Models/img/twitter.png",
+      "Models/img/github.png",
+      "Models/img/wechat.png"
+    ],
+    "refer": [
+      "Models/Main/main.html",
+      "Models/Inscription/inscription.html"
+    ]
+  },
+  "Models/Main/main.html": {
+    "resources": [
+      "Models/Message/message.html",
+      "Sources/mui.js",
+      "Sources/fonts/mui.ttf",
+      "Sources/mui.css",
+      "Models/Main/main.js",
+      "Sources/fonts/iconfont.woff",
+      "Sources/fonts/iconfont.css",
+      "Models/Main/main.css"
+    ],
+    "refer": [
+      "Models/Message/message.html",
+      "Models/Discover/discover.html",
+      "Models/AdressBook/adress.html",
+      "Models/my/my.html"
+    ]
+  },
+  "Models/Message/message.html": {
+    "resources": [
+      "Models/Message/message.css",
+      "Models/Message/message.js",
+      "Sources/mui.js",
+      "Sources/mui.css",
+      "Sources/fonts/mui.ttf",
+      "img/message.png",
+      "Sources/app.css",
+      "Models/Chat/star.png",
+      "Models/Chat/stars.png",
+      "Models/img/message.png"
+    ],
+    "refer": [
+      "Models/Chat/chat.html",
+      "Models/Chats/chatchentong.html",
+      "Models/Chats/chatvictor.html"
+    ]
+  },
+  "Models/Discover/discover.html": {
+    "resources": [
+      "Models/Discover/discover.css",
+      "Models/Discover/discover.js",
+      "Sources/mui.js",
+      "Sources/mui.css",
+      "Sources/fonts/mui.ttf",
+      "Models/Discover/news.png",
+      "Models/Discover/shake.png",
+      "Models/Discover/clean.png",
+      "Models/Discover/shop.png",
+      "Models/Discover/person.png",
+      "Models/Discover/game.png",
+      "Models/Discover/friend.png",
+      "Sources/app.css",
+      "Models/Discover/people.png",
+      "Models/Discover/scan.png",
+      "Models/Discover/facebook.png"
+    ],
+    "refer": [
+      "Models/Shake/shake.html",
+      "Models/Scan/scan.html",
+      "Models/News/news.html"
+    ]
+  },
+  "Models/AdressBook/adress.html": {
+    "resources": [
+      "Models/AdressBook/adress.js",
+      "Models/AdressBook/adress.css",
+      "img/message.png",
+      "Sources/fonts/mui.ttf",
+      "Sources/mui.indexedlist.js",
+      "Sources/mui.indexedlist.css",
+      "Sources/mui.js",
+      "Sources/mui.css",
+      "Sources/app.css",
+      "Models/AdressBook/chat.png",
+      "Models/img/message.png",
+      "Models/AdressBook/sea.png",
+      "Models/AdressBook/dog.png",
+      "Models/AdressBook/movie.png",
+      "Models/AdressBook/house.png",
+      "Models/AdressBook/person.png",
+      "Models/AdressBook/tree.png"
+    ],
+    "refer": []
+  },
+  "Models/my/my.html": {
+    "resources": [
+      "Models/my/my.css",
+      "Models/my/my.js",
+      "Sources/mui.js",
+      "Sources/mui.css",
+      "Sources/fonts/mui.ttf",
+      "Models/my/me.png",
+      "Models/my/wallet.png",
+      "Models/my/photo.png",
+      "Models/my/packet.png",
+      "Models/my/collection.png",
+      "Models/my/code.png",
+      "Models/my/setting.png",
+      "Models/my/face.png",
+      "Sources/app.css",
+      "Models/my/music.png",
+      "Models/my/video.png",
+      "Models/my/view.png"
+    ],
+    "refer": [
+      "Models/Setting/setting.html",
+      "Models/Audio/audio.html",
+      "Models/Photo/photo.html",
+      "Models/Video/video.html"
+    ]
+  },
+  "Models/Problem/problem.html": {
+    "resources": [
+      "Models/Login/login.html",
+      "Models/Problem/problem.js",
+      "Sources/mui.js",
+      "Models/Problem/problem.css",
+      "Sources/fonts/mui.ttf",
+      "Sources/mui.css"
+    ],
+    "refer": [
+      "Models/Login/login.html"
+    ]
+  },
+  "Models/Shake/shake.html": {
+    "resources": [
+      "Models/Shake/shake.js",
+      "Models/Shake/shakedown.png",
+      "Models/Shake/shakeup.png",
+      "Models/Shake/shake.css",
+      "Sources/mui.js",
+      "Sources/fonts/mui.ttf",
+      "Sources/mui.css",
+      "Models/Shake/background.png"
+    ],
+    "refer": []
+  },
+  "Models/Scan/scan.html": {
+    "resources": [
+      "Models/Scan/scan.css",
+      "Models/Scan/scan.js",
+      "Sources/app.css",
+      "Sources/mui.js",
+      "Sources/fonts/mui.ttf",
+      "Sources/mui.css"
+    ],
+    "refer": [
+      "Models/Camera/camera.html"
+    ]
+  },
+  "Models/Inscription/inscription.html": {
+    "resources": [
+      "Models/Inscription/inscription.js",
+      "Models/Inscription/inscription.css",
+      "Sources/mui.js",
+      "Sources/fonts/mui.ttf",
+      "Sources/mui.css"
+    ],
+    "refer": []
+  },
+  "Models/Setting/setting.html": {
+    "resources": [
+      "Sources/app.css",
+      "Models/Setting/setting.js",
+      "Sources/mui.js",
+      "Models/Setting/safe.png",
+      "Models/Setting/setting.css",
+      "Sources/fonts/mui.ttf",
+      "Sources/mui.css"
+    ],
+    "refer": []
+  },
+  "Models/Chat/chat.html": {
+    "resources": [
+      "Models/Chat/chat.css",
+      "Models/Chat/chat.js",
+      "Sources/app.css",
+      "Sources/mui.js",
+      "Sources/fonts/mui.ttf",
+      "Models/Chat/star.png",
+      "Sources/mui.css",
+      "Models/Chat/stars.png"
+    ],
+    "refer": []
+  },
+  "Models/Chats/chatchentong.html": {
+    "resources": [
+      "Models/Chats/star.png",
+      "Sources/app.css",
+      "Sources/mui.js",
+      "Models/Chats/chat.css",
+      "Sources/fonts/mui.ttf",
+      "Sources/mui.css",
+      "Models/Chats/chatchentong.js",
+      "Models/Chats/stars.png",
+      "Sources/realtime.browser.min.js"
+    ],
+    "refer": []
+  },
+  "Models/Chats/chatvictor.html": {
+    "resources": [
+      "Models/Chats/star.png",
+      "Sources/app.css",
+      "Sources/mui.js",
+      "Models/Chats/chat.css",
+      "Sources/fonts/mui.ttf",
+      "Models/Chats/chatvictor.js",
+      "Sources/mui.css",
+      "Models/Chats/stars.png",
+      "Sources/realtime.browser.min.js"
+    ],
+    "refer": []
+  },
+  "Models/Audio/audio.html": {
+    "resources": [
+      "Models/Audio/audio.js",
+      "Sources/mui.js",
+      "Models/Audio/music.png",
+      "Models/Audio/audio.css",
+      "Sources/mui.css",
+      "Models/Audio/muisc2.png",
+      "Models/Audio/music3.png",
+      "Sources/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "Models/Exemple/testvideo.html": {
+    "resources": [
+      "Models/Exemple/video.mp4"
+    ],
+    "refer": []
+  },
+  "Models/Photo/photo.html": {
+    "resources": [
+      "Models/Photo/mui.min.css",
+      "Models/Photo/photo.js",
+      "Models/Photo/yuantiao.jpg",
+      "Models/Photo/shuijiao.jpg",
+      "Sources/mui.js",
+      "Models/Photo/muwu.jpg",
+      "Sources/fonts/mui.ttf",
+      "Models/Photo/cbd.jpg",
+      "Models/Photo/mui.min.js",
+      "Sources/mui.css",
+      "Models/Photo/photo.css",
+      "Models/Photo/SID.png",
+      "Models/Photo/cofe.png",
+      "Models/Photo/world.png",
+      "Models/Photo/sleep.png"
+    ],
+    "refer": []
+  },
+  "Models/Video/video.html": {
+    "resources": [
+      "Models/Video/video.js",
+      "Models/Video/video.mp4",
+      "Sources/mui.js",
+      "Sources/fonts/mui.ttf",
+      "Models/Video/video.css",
+      "Sources/mui.css"
+    ],
+    "refer": []
+  },
+  "Models/News/news.html": {
+    "resources": [
+      "Models/News/person.png",
+      "Models/News/friend.png",
+      "Models/News/mui.min.js",
+      "Sources/mui.js",
+      "Models/News/newyork.png",
+      "Models/News/news.js",
+      "Models/News/mui.min.css",
+      "Sources/fonts/mui.ttf",
+      "Models/News/world.png",
+      "Sources/mui.css",
+      "Models/News/paris.png",
+      "Models/News/news.css",
+      "Sources/app.css"
+    ],
+    "refer": []
+  },
+  "Models/Camera/camera.html": {
+    "resources": [
+      "Models/Camera/camera.js",
+      "Models/Camera/camera.css",
+      "Sources/app.css",
+      "Sources/mui.js",
+      "Sources/fonts/mui.ttf",
+      "Sources/mui.css"
+    ],
+    "refer": []
+  }
+}

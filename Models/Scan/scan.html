@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />	
+		<link rel="stylesheet" type="text/css" href="../../Sources/mui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../Sources/app.css"/>
+		<script src="../../Sources/mui.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="scan.css"/>
+		<title></title>	
+	</head>
+    <body>
+	
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-pull-left"><i class="mui-icon mui-icon-left-nav"></i>BACK</a>
+		    <h1 class="mui-title">SCAN</h1>
+		    <a class="mui-pull-right"><i class="mui-icon mui-icon-settings"></i></a>
+		</header>
+		
+		<nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-camera"></span>
+		        <span class="mui-tab-label">Scan</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-chatboxes-filled"></span>
+		        <span class="mui-tab-label">Cover</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-videocam"></span>
+		        <span class="mui-tab-label">
+		        	<button id="button-camera" class="button-camera" onclick="captureImage()">Camera</button> 
+		        </span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-gear"></span>
+		        <span class="mui-tab-label">Setting</span>
+		    </a>
+		</nav>
+		
+		<div class="mui-content">
+		    <div id="bcode"> </div>
+		</div>
+			
+		<script src="scan.js"></script>
+	
+    </body>
+</html>
